@@ -1,0 +1,46 @@
+.itemFood-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    align-items: flex-start;
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.itemFood-card {
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    
+    .cardPhoto{
+        height: 400px;
+        background-image: url('./static/img/photo/test-food-photo.webp');
+        transition: 0.5s;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        .cardPhoto__hiddenDesc {
+            padding: 0 10px 30px 10px;
+            color: #fff;
+        }
+    }
+    .cardPhoto:hover {
+        background-image: linear-gradient(to top,rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url('./static/img/photo/test-food-photo.webp');
+    }
+
+    .cardInfo {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .cardInfo__title {
+            width: 70%;
+        }
+
+        .cardInfo__price {
+            color: #c21313;
+        }
+    }
+}

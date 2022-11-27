@@ -1,0 +1,14 @@
+@import './section/main-food.scss';
+
+main {
+    background-color: #efefef;
+}
+
+.main__sectionWrapper {
+    @include divCen(50%);
+}
+
+.itemFood__title {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
